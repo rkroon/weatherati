@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Weatherati</title>
+    	<link rel='stylesheet' href='/stylesheets/style.css' />
+  	</head>
+  	<body>
+  		<div class="bodyDiv">
+			<div class="titlebar">
+				<div>
+					<image src="./images/weatherati.png">
+				</div>
+				<h1>
+					Weatherati
+					<br/>
+					<div class="blurb">
+						Does the weather control the stock market?
+					</div>
+				</h1>
+				<div style="clear:both;"></div>
+			</div>
+			<div style="clear: both;">
+			</div>
+			<table id="dateTable">
+					<tr>
+						<th>Dates</th>
+					</tr>
+					<%
+						for(var i = 0; i < days.length; i++){	
+					%>
+						<tr>
+							<td>
+								<a href="./?date=<%= days[i].date %>&span=hour"><%= days[i].date %></a>
+							</td>
+						</tr>
+					<%
+						}
+					%>
+				</table>
+
+				<div style="clear: both"></div>
+			</div>
+		</div>
+	</body>
+</html>

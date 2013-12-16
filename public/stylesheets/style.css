@@ -1,0 +1,131 @@
+body {
+  padding: 0px;
+  font: 14px Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+.bodyDiv {
+  margin: 0px auto;
+  width: 1000px;
+}
+.x.axis path {
+  display: none;
+}
+.tline {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.pline {
+  fill: none;
+  stroke: red;
+  stroke-width: 1.5px;
+}
+#header {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  left: 20px;
+}
+.dateBox {
+  height: 50px;
+  float: left;
+  width: 400px;
+  text-align: center;
+  padding: 8px 0px 0px 0px;
+}
+.dateControl {
+  float: left;
+  background-color: #eee;
+  text-align: center;
+  border: solid #ccc;
+  border-width: 1px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  padding: 15px 15px 16px 15px;
+  text-decoration: none;
+  color: #00B7FF;
+  cursor: pointer;
+}
+.dateControlBox {
+  padding: 10px 0px 0px 195px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.titlebar {
+  width: 1000px;
+  margin: 0px auto;
+  padding: 10px 0px 20px;
+}
+.titlebar h1 {
+  display: block;
+  float: left;
+  font-family: courier;
+  font-size: 42px;
+  padding: 2px 0px 0px 15px;
+  margin: 0px;
+}
+.titlebar .blurb {
+  font-family: arial;
+  font-size: 14px;
+  font-weight: normal;
+}
+.titlebar div {
+  float: left;
+}
+#header li {
+  display: inline;
+  margin: 0 0.1em 0 0;
+  position: relative;
+  top: 4px;
+  border: solid;
+  border-width: 1px 1px 0 1px;
+  border-color: #333;
+  -moz-border-radius: 3px 3px 0px 0px;
+  border-radius: 3px 3px 0px 0px;
+  text-decoration: none;
+  padding: 12px 20px 10px 20px;
+  background: #f3f3f3;
+  color: #00B7FF;
+  cursor: pointer;
+}
+#header li.current {
+  padding: 12px 20px 11px 20px;
+  background: white !important;
+}
+#tab1 {
+  border: 1px solid;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  width: 1000px;
+}
+#dateTable td {
+  text-align: center;
+}
+#dataTable,
+#dateTable {
+  margin: 10px auto;
+  border-collapse: collapse;
+  border: solid #222;
+  border-width: 1px 1px 1px 1px;
+}
+#dataTable th,
+#dateTable th {
+  padding: 3px 25px;
+  border: solid #222;
+  border-width: 1px 1px 1px 1px;
+}
+#dataTable td,
+#dateTable td {
+  padding-top: 6px;
+  border-top: solid #efefef 1px;
+  border-left: solid #333 1px;
+  border-right: solid #333 1px;
+}

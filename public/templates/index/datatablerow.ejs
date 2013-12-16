@@ -1,0 +1,35 @@
+<tr>
+	<td>
+		<%=  (h<=9 ? '0' + h : h) + ":" + (m<=9 ? '0' + m : m) %>
+	</td>
+	<td>
+		<%= temperature.toFixed(2) %>
+	</td>
+	<td>
+		<%
+			if(tempChange.toFixed(3) > 0)
+			{
+				%><%= (tempChange.toFixed(3) > 0 ? '+' : '') + tempChange.toFixed(2) %><%	
+			}
+			else if(tempChange.toFixed(3) < 0)
+			{
+				%><%= tempChange.toFixed(2) %><%	
+			}
+		%>
+	</td>
+	<td>
+		<%= price.toFixed(2) %>
+	</td>
+	<td>
+		<%
+		if(priceChange.toFixed(3) > 0)
+		{
+			%><%= (priceChange.toFixed(3) > 0 ? '+' : '') + priceChange.toFixed(2) %><%	
+		}
+		else if(priceChange.toFixed(3) < 0)
+		{
+			%><%= priceChange.toFixed(2) %><%	
+		}
+		%>
+	</td>
+</tr>
